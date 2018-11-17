@@ -1,0 +1,49 @@
+{
+  "name": "tbone-static-gen",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Herramienta de generación de estáticos con npm para T-Bone",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-systemjs": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-preset-minify": "^0.4.3",
+    "chromedriver": "^2.40.0",
+    "copyfiles": "^2.0.0",
+    "jest": "^23.4.2",
+    "jest-junit": "^5.1.0",
+    "nightwatch": "^0.9.21",
+    "postcss-cli": "^6.0.0",
+    "regenerator-runtime": "^0.12.0",
+    "rimraf": "^2.6.2",
+    "sass": "^1.14.0",
+    "selenium-server-standalone-jar": "^3.13.0",
+    "systemjs": "^0.21.4"
+  },
+  "scripts": {
+    "test": "npm run test:unitarios",
+    "test:unitarios": "jest -c test/unit/jest.config.json",
+    "build": "npm run clear:dist && npm run babel:pro && npm run deploy:rest && npm run css:pro",
+    "develop": "npm run clear:dist && npm run babel:dev & npm run css:dev",
+    "babel:dev": "BABEL_ENV=development babel src --out-dir dist --watch --source-maps",
+    "babel:pro": "BABEL_ENV=production babel src --out-dir dist --source-maps",
+    "deploy:rest": "copyfiles -u 1 src/**/*-conf.js dist",
+    "clear:dist": "rimraf dist",
+    "css:dev": "sass --watch src:dist & npm run css:prefix-watched",
+    "css:pro": "sass src:dist --style=compressed --no-source-map"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.0"
+  }
+}

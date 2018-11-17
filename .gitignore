@@ -1,0 +1,8 @@
+package-lock.json
+node_modules/**
+**/jsTest/**/report/
+**/jsTest/**/logs/
+**/jsTest/**/screenshots/
+**/jsUtest/**/report/
+**/test/**/report/
+npm-debug.log

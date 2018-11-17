@@ -1,0 +1,42 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "dynamic-import-node"
+    ],
+    "env": {
+        "production": {
+            "presets": [
+                "minify"
+            ],
+            "plugins": [
+                "@babel/plugin-transform-modules-systemjs",
+                ["@babel/plugin-proposal-decorators", { "legacy": true }]
+            ]
+        },
+        "development": {
+            "plugins": [
+                "@babel/plugin-transform-modules-systemjs",
+                ["@babel/plugin-proposal-decorators", { "legacy": true }]
+            ]
+        },
+        "test": {
+            "presets": [
+                "@babel/preset-env"
+            ],
+            "plugins": [
+                [
+                    "@babel/plugin-transform-runtime",
+                    {
+                        "polyfill": false,
+                        "regenerator": true
+                    }
+                ]
+            ]
+        }
+    },
+    "ignore": [
+        "src/common/js/global-conf.js"
+    ]
+}
