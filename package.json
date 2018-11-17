@@ -40,7 +40,7 @@
     "babel:pro": "BABEL_ENV=production babel src --out-dir dist --source-maps",
     "deploy:rest": "copyfiles -u 1 src/**/*-conf.js dist",
     "clear:dist": "rimraf dist",
-    "css:dev": "sass --watch src:dist & npm run css:prefix-watched",
+    "css:dev": "sass --watch src:dist",
     "css:pro": "sass src:dist --style=compressed --no-source-map"
   },
   "dependencies": {

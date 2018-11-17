@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":[],"file":"application.js"}
+{"version":3,"sources":["../../../src/tuProyecto/js/application.js"],"names":["pp"],"mappings":";;;;;;;;;AAAMA,MAAAA,E,GAAK,SAALA,EAAK,GAAI;AACX,eAAO,CAAP;AACH,O","sourcesContent":["const pp = ()=>{\n    return 1\n}"],"file":"application.js"}
