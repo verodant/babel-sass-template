@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/common/js/common/hosts.js"],"names":[],"mappings":"AAAA","sourcesContent":["/*\nte lo dejo comentado hasta que lo hagas\n\n\nimport hosts from '/systemjs-config.php' ;\n\nexport const HOSTS = hosts;\n*/"],"file":"hosts.js"}
