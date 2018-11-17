@@ -1,3 +1,1 @@
-# babel-sass-template
-# babel-sass-template
-# babel-sass-template
+Template básico para babel.
