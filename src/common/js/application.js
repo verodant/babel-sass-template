@@ -5,8 +5,9 @@
 /**
  * Plugins para Babel
  */
-import '/libraries/regenerator-runtime/runtime.js';
+//import '/libraries/regenerator-runtime/runtime.js';
 
+import '/dist/common/js/prueba.js'
 /* Archivo del aplicativo*/ 
 
 

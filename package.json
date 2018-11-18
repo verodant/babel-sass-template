@@ -35,7 +35,7 @@
     "test": "npm run test:unitarios",
     "test:unitarios": "jest -c test/unit/jest.config.json",
     "build": "npm run clear:dist && npm run babel:pro && npm run deploy:rest && npm run css:pro",
-    "develop": "npm run clear:dist && npm run babel:dev & npm run css:dev",
+    "develop": "npm run clear:dist && npm run babel:dev && npm run deploy:rest & npm run css:dev",
     "babel:dev": "BABEL_ENV=development babel src --out-dir dist --watch --source-maps",
     "babel:pro": "BABEL_ENV=production babel src --out-dir dist --source-maps",
     "deploy:rest": "copyfiles -u 1 src/**/*-conf.js dist",

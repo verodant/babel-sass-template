@@ -1,4 +1,4 @@
 System.config({
-    baseURL: "/javascript/dist"
+    baseURL: "/dist"
 });
-System.import("common/application.js");
+System.import("common/js/application.js");
