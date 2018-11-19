@@ -11,13 +11,11 @@
                 "minify"
             ],
             "plugins": [
-                "@babel/plugin-transform-modules-systemjs",
                 ["@babel/plugin-proposal-decorators", { "legacy": true }]
             ]
         },
         "development": {
             "plugins": [
-                "@babel/plugin-transform-modules-systemjs",
                 ["@babel/plugin-proposal-decorators", { "legacy": true }]
             ]
         },

@@ -1,19 +1,9 @@
 "use strict";
 
-System.register([], function (_export, _context) {
-  "use strict";
+var a = function a() {
+  console.log('pp');
+  return false;
+};
 
-  var a;
-  return {
-    setters: [],
-    execute: function () {
-      a = function a() {
-        console.log('oo');
-        return false;
-      };
-
-      a();
-    }
-  };
-});
+a();
 //# sourceMappingURL=prueba.js.map

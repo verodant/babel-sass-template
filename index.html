@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,18 @@
     <script src="/node_modules/systemjs/dist/system.js"></script>
     <script src="/dist/common/js/global-conf.js"></script>
 </head>
+
 <body>
-    
+    <script>
+        System.import("common/js/party.js").then(function (req) {
+            console.log('esto es req1-> ', req.kk());
+        });
+    </script>
+    <script>
+        System.import("common/js/party.js").then(function (req) {
+            console.log('esto es req2-> ', req.yy('hola soy angel'));
+        });
+    </script>
 </body>
+
 </html>
